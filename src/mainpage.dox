@@ -1,0 +1,28 @@
+/**
+ * @mainpage Propositional Logic Parse Trees (CS F214, Assignment 1, Part A)
+ *
+ * This project stores a propositional-logic formula as a binary parse tree and runs the
+ * algorithms of Tasks 1-6 on it.
+ *
+ * Connectives: `~` NOT, `+` OR, `*` AND, `>` implication. Input formulas are fully parenthesized.
+ *
+ * @section pipeline Pipeline
+ * infix string --(Task 1)--> prefix string --(Task 2)--> parse tree --(Tasks 3,4,5)--> traversals,
+ * height, truth value / truth table --(Task 6)--> measurements and an HTML report.
+ *
+ * @section files Source files
+ * | Task | Files |
+ * |------|-------|
+ * | shared | common.h, common.cpp |
+ * | 1 | task1_infix_to_prefix.h / .cpp |
+ * | 2 | task2_prefix_to_tree.h / .cpp |
+ * | 3 | task3_traversals.h / .cpp |
+ * | 4 | task4_height.h / .cpp |
+ * | 5 | task5_evaluate.h / .cpp |
+ * | 6 + data set | task6_analysis.h / .cpp, dimacs.h / .cpp |
+ * | driver | main.cpp |
+ *
+ * @section data Data set
+ * DIMACS `.cnf` files of the SAT 2002 benchmark are read by readDimacs() and converted to an infix
+ * formula by cnfToInfix().
+ */
